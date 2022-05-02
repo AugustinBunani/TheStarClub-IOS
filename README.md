@@ -95,19 +95,17 @@ MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest)
 
 <h3>UI and StoryCards</h3>
 
-![image](https://user-images.githubusercontent.com/48664320/165671137-a9aa29e0-926e-4032-ad66-e1af456a3fa4.png)
+![image](https://user-images.githubusercontent.com/48664320/166229767-2a24ceff-52dd-4efd-a1f1-c8f057ce359b.png)
 
-![image](https://user-images.githubusercontent.com/48664320/165671189-858a8b61-2857-4685-ad92-520c41fc6b34.png)
+
+![image](https://user-images.githubusercontent.com/48664320/166229786-c663c70e-fb98-4043-902c-3f5ee0905551.png)
 
 <h3>Documentation</h3>
 
-Under AppDocumentation Directory within this code there is a version control document  <a href="https://github.com/AugustinBunani/TheStarClub/blob/main/app/src/main/java/com/augustin/thestarclub/appdocumentation/version_control_doc">HERE</a>. Which contains a list of all major pulls / push and commit entries to this repository. 
+Under AppDocumentation Directory within this code there is a version control document  <a href="https://github.com/AugustinBunani/TheStarClub-IOS/blob/main/TheStarClub/TheStarClub/Documentation/version_control_doc.md">HERE</a>. Which contains a list of all major pulls / push and commit entries to this repository. 
 
 
 <h3>Libraries Used</h3>
 
-<ul>
-  <li>Compose - <a href="https://developer.android.com/jetpack/compos"e>https://developer.android.com/jetpack/compose</a></li>
-  <li>Volley (v1.0.0) - <a href="https://developer.android.com/training/volley/index.html">https://developer.android.com/training/volley/index.html</a></li>
 </ul>
 
