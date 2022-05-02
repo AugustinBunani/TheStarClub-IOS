@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserData: Codable, CustomStringConvertible{
+struct UserData: Codable,CustomStringConvertible{
     
     
 //    var id: ObjectIdentifie

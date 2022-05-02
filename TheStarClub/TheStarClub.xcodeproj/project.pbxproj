@@ -26,6 +26,7 @@
 		8AC94C79281FC17200807697 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C78281FC17200807697 /* UserData.swift */; };
 		8AC94C7B281FC1E200807697 /* BenefitsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C7A281FC1E200807697 /* BenefitsData.swift */; };
 		8AC94C7F281FE8E300807697 /* ExtendableScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C7E281FE8E300807697 /* ExtendableScreenView.swift */; };
+		8AC94C81281FFBC400807697 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C80281FFBC400807697 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8AC94C78281FC17200807697 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		8AC94C7A281FC1E200807697 /* BenefitsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsData.swift; sourceTree = "<group>"; };
 		8AC94C7E281FE8E300807697 /* ExtendableScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendableScreenView.swift; sourceTree = "<group>"; };
+		8AC94C80281FFBC400807697 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				8AB87747281F78BE0052BB10 /* APIService.swift */,
 				8AB87749281F79080052BB10 /* ApiError.swift */,
+				8AC94C80281FFBC400807697 /* Constants.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				8AC94C7B281FC1E200807697 /* BenefitsData.swift in Sources */,
 				8AB8774C281F79E70052BB10 /* UserDataFetch.swift in Sources */,
 				8AB87752281F81D60052BB10 /* UserDataListView.swift in Sources */,
+				8AC94C81281FFBC400807697 /* Constants.swift in Sources */,
 				8AB87713281F743D0052BB10 /* ContentView.swift in Sources */,
 				8AB87750281F7D590052BB10 /* LoadingView.swift in Sources */,
 				8AB87711281F743D0052BB10 /* TheStarClubApp.swift in Sources */,

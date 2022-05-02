@@ -27,8 +27,10 @@ class UserDataFetch: ObservableObject {
         let url = URL(string: "https://run.mocky.io/v3/c1819867-9260-4d1e-b9e1-3a77372c83df")
         
         let service = APIService()
-        service.fetchUserData(url: url){ [unowned self] result in
-            
+//        service.fetchUserData(url: url){ [unowned self] result in
+        
+        service.fetchData(type(of: userData), url: url) { [unowned self] result in
+        
             DispatchQueue.main.async { [self] in
                 self.isLoading = false
                 switch result {

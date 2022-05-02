@@ -27,7 +27,8 @@ class UserBenefitsFetch: ObservableObject {
         let url = URL(string: "https://run.mocky.io/v3/6bd03c3d-8b70-40fe-b26c-36bfc03296ff")
         
         let service = APIService()
-        service.fetchUserBenefits(url: url){ [unowned self] result in
+//        service.fetchUserBenefits(url: url){ [unowned self] result in
+        service.fetchData(type(of: userBenefits), url: url) { [unowned self] result in
             
             DispatchQueue.main.async { [self] in
                 self.isLoading = false
