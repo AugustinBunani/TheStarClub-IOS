@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var userDataFetch = UserDataFetch()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        if userDataFetch.isLoading{
+            LoadingView()
+        }else if userDataFetch.errorMessage != nil{
+            ErrorView(userDataFetcher: userDataFetch)
+        }else{
+            UserDataListView(userData: userDataFetch.userData!)
+        }
+     
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
