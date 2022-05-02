@@ -15,43 +15,62 @@ struct BenefitsListView: View {
     var body: some View {
         
         if userBenefitsFetch.isLoading{
-            LoadingViewBEN()
+            LoadingView()
         }else if userBenefitsFetch.errorMessage != nil{
             ErrorViewBenefits(userBenefitsFetch: userBenefitsFetch)
         }else{
             
-            ForEach(userBenefitsFetch.userBenefits!.benefits, id: \.name) { benefit in
-                HStack{
-                    VStack{
-                        Text("Benefit")
-                            .foregroundColor(Color.white)
-                            .bold()
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        //                            Spacer()
-                        Text(benefit.name)
-                            .font(.footnote)
-                            .foregroundColor(Color.white)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                    }
-                    VStack{
-                        Text("Expire Date")
-                            .foregroundColor(Color.red)
-                            .bold()
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                        Text(benefit.expireDate)
-                            .bold()
-                            .foregroundColor(Color.white)
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                        //                                .padding(10)
-                    }
+            NavigationView{
+                VStack {
+                    Text("BENEFITS")
+                        .bold()
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                    Divider()
                     
-                }.padding()
-                    .background(Color.blue)
-                    .cornerRadius(20)
-                
+                    ForEach(userBenefitsFetch.userBenefits!.benefits, id: \.name) { benefit in
+                        
+                        HStack{
+                            
+                            VStack{
+                                Text("Benefit")
+                                    .foregroundColor(Color.white)
+                                    .bold()
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                //                            Spacer()
+                                Text(benefit.name)
+                                    .font(.footnote)
+                                    .foregroundColor(Color.white)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                            }
+                            VStack{
+                                Text("Expire Date")
+                                    .foregroundColor(Color.red)
+                                    .bold()
+                                    .frame(maxWidth: .infinity, alignment: .trailing)
+                                Text(benefit.expireDate)
+                                    .bold()
+                                    .foregroundColor(Color.white)
+                                    .frame(maxWidth: .infinity, alignment: .trailing)
+                            }
+                        }
+                        
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                    }
+                    .padding()
+                    Spacer()
+                }
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color("backgrounColor"))
+                Spacer()
             }
-            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("backgrounColor"))
+            
         }
     }
 }

@@ -18,15 +18,6 @@ struct LoadingView: View {
     }
 }
 
-struct LoadingViewBEN: View {
-    
-    var body: some View{
-        VStack{
-            Text("Loading BENEFITSSS").font(.system(size: 20))
-            ProgressView()
-        }
-    }
-}
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {

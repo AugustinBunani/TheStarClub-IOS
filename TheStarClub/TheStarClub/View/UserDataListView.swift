@@ -10,33 +10,45 @@ import SwiftUI
 struct UserDataListView: View{
     
     let userData: UserData
-
+    
+    //    let rowColor: Color = Color(UIColor(red: 0, green: 7, blue: 44, alpha: 1))
+    //
+    //    let backgroundColor: Color = Color(UIColor(red: 1, green: 0, blue: 1, alpha: 1))
     
     var body: some View{
-        VStack{
-            HStack{
+        NavigationView{
+            VStack {
+                Text("THE STAR CLUB")
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                Divider()
+                
                 VStack{
-                    Text("Welcome Back")
-                    Spacer()
-                    Text(userData.name)
-                        .font(.largeTitle)
-                }
+                    HStack{
+                        VStack{
+                            Text("Welcome Back")
+                                .foregroundColor(Color.white)
+                            Spacer()
+                            Text(userData.name)
+                                .font(.largeTitle)
+                                .foregroundColor(Color.white)
+                        }
+                        Spacer()
+                        Image("profile")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 100, height: 100, alignment: .top)
+                        
+                        
+                    }
+                    .frame(height:100)
+                }.padding()
                 
                 Spacer()
-                Image("profile")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 100, height: 100, alignment: .top)
                 
+                //                BENEFITS
                 
-            }.padding()
-                .frame(height:100)
-        }
-        
-        
-        NavigationView{
-            
-            VStack(alignment: .center, spacing: 0, content:{
                 VStack{
                     NavigationLink(destination: BenefitsListView())
                     {
@@ -50,30 +62,34 @@ struct UserDataListView: View{
                             Image("diamond")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 100, height: 100, alignment: .center)
+                                .frame(width: 100, height: 100, alignment: .leading)
                             
-                            Spacer()
+                            //                            Spacer()
                             
                         }.padding()
+                            .frame(height:120)
                             .background(Color.blue)
                             .cornerRadius(20)
                         
                         
                     }
                 }
-                .padding()
+                
+//                Spacer()
                 
                 VStack{
-                    NavigationLink(destination: LoadingView()) {
+                    NavigationLink(destination: ExtendableScreenView()) {
                         HStack{
                             VStack{
                                 Text("TIER POINTS")
                                     .foregroundColor(Color.white)
                                     .bold()
+                                    .scaledToFit()
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                 Spacer()
                                 Text("The Current Balance")
                                     .font(.footnote)
+                                    .scaledToFit()
                                     .foregroundColor(Color.white)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                 Spacer()
@@ -82,21 +98,24 @@ struct UserDataListView: View{
                                     .bold()
                                     .frame(maxWidth: .infinity, alignment: .leading)
                             }
-                            Spacer()
+                            //                            Spacer()
                             VStack{
                                 Text("TIER POINTS TO SILVER")
                                     .foregroundColor(Color.white)
-                                    .bold()
+                                
                                     .frame(maxWidth: .infinity, alignment: .trailing)
+                                
                                 Spacer()
                                 Text("0")
                                     .bold()
+                                    .scaledToFit()
                                     .foregroundColor(Color.white)
                                     .frame(maxWidth: .infinity, alignment: .trailing)
                                     .padding(10)
                             }
                             
                         }.padding()
+                            .frame(height:120)
                             .background(Color.blue)
                             .cornerRadius(20)
                         
@@ -104,10 +123,10 @@ struct UserDataListView: View{
                     
                 }
                 
-                .padding()
+//                Spacer()
                 
                 VStack{
-                    NavigationLink(destination: LoadingView()) {
+                    NavigationLink(destination: ExtendableScreenView()) {
                         HStack{
                             VStack{
                                 Text("STAR GIFTS")
@@ -126,17 +145,18 @@ struct UserDataListView: View{
                             
                             
                         }.padding()
+                            .frame(height:120)
                             .background(Color.blue)
                             .cornerRadius(20)
                         
                     }
                     
+                    
                 }
-                
-                .padding()
-                
+            
+    
                 VStack{
-                    NavigationLink(destination: LoadingView()) {
+                    NavigationLink(destination: ExtendableScreenView()) {
                         HStack{
                             VStack{
                                 Text("CASINO DOLLARS BALANCE")
@@ -152,20 +172,25 @@ struct UserDataListView: View{
                                 Spacer()
                             }
                             Spacer()
-                            
-                            
+
+
                         }.padding()
+                            .frame(height:120)
                             .background(Color.blue)
                             .cornerRadius(20)
-                        
+
                     }
                 }
-                .padding()
-                
-            })
+            
+            }
+            .background(Color("backgrounColor"))
+            
         }
         
+        
     }
+    
+
     
 }
 

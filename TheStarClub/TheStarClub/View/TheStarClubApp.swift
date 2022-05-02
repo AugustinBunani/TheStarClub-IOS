@@ -12,6 +12,7 @@ struct TheStarClubApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .background(Color.pink)
         }
     }
 }

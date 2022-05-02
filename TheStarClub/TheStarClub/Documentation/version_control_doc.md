@@ -1,4 +1,10 @@
 ----------------------------
+version : 1.0.6,
+Schema : 1
+Coder : Gus
+Date : 2/05/2022
+Changes : Code finalised, test & release
+----------------------------
 version : 1.0.5,
 Schema : 1
 Coder : Gus

@@ -25,6 +25,7 @@
 		8AC94C77281FBD0A00807697 /* ErrorViewBenefits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C76281FBD0A00807697 /* ErrorViewBenefits.swift */; };
 		8AC94C79281FC17200807697 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C78281FC17200807697 /* UserData.swift */; };
 		8AC94C7B281FC1E200807697 /* BenefitsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C7A281FC1E200807697 /* BenefitsData.swift */; };
+		8AC94C7F281FE8E300807697 /* ExtendableScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC94C7E281FE8E300807697 /* ExtendableScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8AC94C76281FBD0A00807697 /* ErrorViewBenefits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewBenefits.swift; sourceTree = "<group>"; };
 		8AC94C78281FC17200807697 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		8AC94C7A281FC1E200807697 /* BenefitsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitsData.swift; sourceTree = "<group>"; };
+		8AC94C7E281FE8E300807697 /* ExtendableScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendableScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				8AB87751281F81D60052BB10 /* UserDataListView.swift */,
 				8AB87757281FAFE70052BB10 /* BenefitsListView.swift */,
 				8AC94C76281FBD0A00807697 /* ErrorViewBenefits.swift */,
+				8AC94C7E281FE8E300807697 /* ExtendableScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				8AB87713281F743D0052BB10 /* ContentView.swift in Sources */,
 				8AB87750281F7D590052BB10 /* LoadingView.swift in Sources */,
 				8AB87711281F743D0052BB10 /* TheStarClubApp.swift in Sources */,
+				8AC94C7F281FE8E300807697 /* ExtendableScreenView.swift in Sources */,
 				8AB87748281F78BE0052BB10 /* APIService.swift in Sources */,
 				8AC94C77281FBD0A00807697 /* ErrorViewBenefits.swift in Sources */,
 				8AB8774E281F7CE20052BB10 /* ErrorView.swift in Sources */,
@@ -514,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = augustin.TheStarClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -542,7 +546,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = augustin.TheStarClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
